@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4d0420"/><stop offset="1" stop-color="#0B1220"/></linearGradient>
+    <linearGradient id="sh" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#B30D41"/><stop offset="1" stop-color="#6E0526"/></linearGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#bg)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".12" stroke-width="1.2">
+    <circle cx="1090" cy="160" r="120"/><ellipse cx="1090" cy="160" rx="55" ry="120"/><ellipse cx="1090" cy="160" rx="100" ry="120"/><ellipse cx="1090" cy="160" rx="120" ry="28"/><ellipse cx="1090" cy="100" rx="104" ry="20"/><ellipse cx="1090" cy="220" rx="104" ry="20"/>
+    <ellipse cx="1090" cy="160" rx="170" ry="54" transform="rotate(-18 1090 160)" stroke="#ff9fbd" stroke-opacity=".5" stroke-dasharray="3 7"/>
+  </g>
+  <g transform="translate(88 92)">
+    <rect width="136" height="136" rx="32" fill="#0B1220" stroke="#fff" stroke-opacity=".12"/>
+    <path d="M68 20 107 34v32c0 25-17 44-39 55-22-11-39-30-39-55V34z" fill="url(#sh)"/>
+    <g fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round"><circle cx="68" cy="66" r="23"/><ellipse cx="68" cy="66" rx="10" ry="23"/><path d="M45 66h46M49 53h38M49 79h38"/></g>
+  </g>
+  <text x="264" y="118" font-family="Menlo, monospace" font-size="16" letter-spacing="3" fill="#D08AA0">INFOSPHERA · DEFENSIVE SECURITY</text>
+  <text x="262" y="182" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="800" font-size="60" fill="#ffffff">Security Toolbox</text>
+  <text x="264" y="226" font-family="Helvetica, Arial, sans-serif" font-size="21" fill="#8FA3B8">Prüfen · Härten · Erkennen · Reagieren — 31 Werkzeuge für macOS und Web</text>
+</svg>

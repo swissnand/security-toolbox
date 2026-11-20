@@ -1,0 +1,52 @@
+{
+  "name": "infosphera-security-toolbox",
+  "productName": "Infosphera Security Toolbox",
+  "version": "1.0.0",
+  "description": "Defensive Security-Werkzeuge aus der Schweiz: prüfen, härten, erkennen, reagieren. macOS-App, Open Source.",
+  "main": "main.js",
+  "author": "SWISSNAND (https://swissnand.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/swissnand/security-toolbox",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swissnand/security-toolbox.git"
+  },
+  "keywords": ["security", "infosec", "toolbox", "macos", "electron", "dmarc", "phishing", "incident-response", "infosphera", "swissnand"],
+  "scripts": {
+    "start": "electron .",
+    "web": "npx --yes http-server src -p 8080 -c-1",
+    "dist": "electron-builder --mac dmg --universal",
+    "dist:arm": "electron-builder --mac dmg --arm64",
+    "dist:intel": "electron-builder --mac dmg --x64"
+  },
+  "devDependencies": {
+    "electron": "^33.2.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "ch.swissnand.infosphera.securitytoolbox",
+    "productName": "Infosphera Security Toolbox",
+    "copyright": "© 2026 SWISSNAND",
+    "files": ["main.js", "preload.js", "src/**/*", "package.json"],
+    "directories": { "buildResources": "build", "output": "dist" },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "icon": "build/icon.png",
+      "target": ["dmg"],
+      "darkModeSupport": true,
+      "hardenedRuntime": false,
+      "identity": null
+    },
+    "dmg": {
+      "title": "Infosphera Security Toolbox",
+      "artifactName": "Infosphera-Security-Toolbox-${version}-${arch}.${ext}",
+      "background": "build/dmg-background.png",
+      "iconSize": 110,
+      "window": { "width": 640, "height": 420 },
+      "contents": [
+        { "x": 170, "y": 215, "type": "file" },
+        { "x": 470, "y": 215, "type": "link", "path": "/Applications" }
+      ]
+    }
+  }
+}

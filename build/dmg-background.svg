@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4d0420"/><stop offset=".55" stop-color="#1a0d1d"/><stop offset="1" stop-color="#0B1220"/>
+    </linearGradient>
+    <radialGradient id="g" cx=".2" cy="0" r=".9"><stop offset="0" stop-color="#C21048" stop-opacity=".45"/><stop offset="1" stop-color="#8A0730" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#bg)"/>
+  <rect width="640" height="420" fill="url(#g)"/>
+  <g fill="none" stroke="#fff" stroke-opacity=".07" stroke-width="1">
+    <circle cx="560" cy="380" r="150"/><ellipse cx="560" cy="380" rx="70" ry="150"/><ellipse cx="560" cy="380" rx="150" ry="40"/>
+  </g>
+  <text x="320" y="62" text-anchor="middle" font-family="Archivo, Helvetica, Arial, sans-serif" font-weight="800" font-size="24" fill="#fff">Infosphera Security Toolbox</text>
+  <text x="320" y="88" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#fff" fill-opacity=".7">In den Ordner «Programme» ziehen</text>
+  <g stroke="#fff" stroke-opacity=".55" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M262 215h108"/><path d="M356 201l16 14-16 14"/>
+  </g>
+  <text x="320" y="392" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="11" fill="#fff" fill-opacity=".45">Erster Start: Rechtsklick auf die App → Öffnen · a SWISSNAND company</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a2640"/>
+      <stop offset="1" stop-color="#070b14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx=".5" cy=".42" r=".55">
+      <stop offset="0" stop-color="#C21048" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#8A0730" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sh" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#B30D41"/>
+      <stop offset="1" stop-color="#6E0526"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff8fb0" stop-opacity=".8"/>
+      <stop offset="1" stop-color="#ff8fb0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="150%"><feDropShadow dx="0" dy="22" stdDeviation="26" flood-color="#000" flood-opacity=".5"/></filter>
+  </defs>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#bg)"/>
+  <rect x="100" y="100" width="824" height="824" rx="186" fill="url(#glow)"/>
+  <g stroke="#ffffff" stroke-opacity=".06" stroke-width="2" fill="none">
+    <circle cx="512" cy="500" r="330"/><circle cx="512" cy="500" r="390"/>
+  </g>
+  <g filter="url(#ds)">
+    <path d="M512 228 732 304v176c0 142-94 246-220 310-126-64-220-168-220-310V304z" fill="url(#sh)"/>
+    <path d="M512 228 732 304v176c0 142-94 246-220 310-126-64-220-168-220-310V304z" fill="none" stroke="url(#edge)" stroke-width="6"/>
+  </g>
+  <g fill="none" stroke="#fff" stroke-width="20" stroke-linecap="round">
+    <circle cx="512" cy="492" r="128"/>
+    <ellipse cx="512" cy="492" rx="56" ry="128"/>
+    <path d="M384 492h256M405 425h214M405 559h214"/>
+  </g>
+</svg>

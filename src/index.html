@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="de-CH" data-theme="auto">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: blob:; connect-src 'self' https://cloudflare-dns.com https://api.pwnedpasswords.com https://services.nvd.nist.gov; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+  <meta name="description" content="Infosphera Security Toolbox: defensive Security-Werkzeuge aus der Schweiz. Prüfen, härten, erkennen, reagieren." />
+  <title>Infosphera Security Toolbox</title>
+  <link rel="icon" href="img/logo.svg" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="drag"></div>
+      <a class="brand" href="#/">
+        <img src="img/logo.svg" alt="" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-name">Infosphera</span>
+          <span class="brand-sub">Security Toolbox</span>
+        </div>
+      </a>
+      <button class="search-trigger" id="searchTrigger" type="button">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <span>Tool suchen …</span>
+        <kbd>⌘K</kbd>
+      </button>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-foot">
+        <div class="foot-row">
+          <button class="theme-btn" id="themeBtn" type="button" title="Design wechseln"></button>
+          <span class="version" id="version"></span>
+        </div>
+        <a class="endorse" href="https://swissnand.com" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7" fill="#004984"/><path d="M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z" fill="#fff"/></svg>
+          <span>a <b>SWISSNAND</b> company</span>
+        </a>
+      </div>
+    </aside>
+    <main class="main" id="main">
+      <div class="drag drag-main"></div>
+      <div id="view"></div>
+    </main>
+  </div>
+
+  <div class="palette" id="palette" hidden>
+    <div class="palette-box">
+      <div class="palette-input">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="paletteInput" placeholder="Tool suchen … (z. B. dmarc, phishing, cvss, notfall)" autocomplete="off" spellcheck="false" />
+        <kbd>esc</kbd>
+      </div>
+      <ul class="palette-list" id="paletteList"></ul>
+    </div>
+  </div>
+  <div class="toast" id="toast"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/tools/lens.js"></script>
+  <script src="js/tools/shield.js"></script>
+  <script src="js/tools/orbit.js"></script>
+  <script src="js/tools/command.js"></script>
+  <script src="js/tools/reference.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
